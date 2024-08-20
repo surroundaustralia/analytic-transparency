@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/features/certification_example> prov:endedAtTime "2029-01-01T22:05:19+02:00"^^xsd:dateTime ;
+    prov:generated <http://example.com/features/GoldStar> ;
+    prov:wasAssociatedWith <http://example.com/features/eg_agents:bc-3> .
+
+<http://example.com/features/GoldStar> a <http://example.com/features/Certificate> ;
+    rdfs:seeAlso [ ns1:relation <http://www.iana.org/assignments/relation/related> ;
+            oa:hasTarget <https://some.gov/linktoact/> ] ;
+    prov:wasAttributedTo <http://example.com/features/eg_agents:myTeacher> .
+

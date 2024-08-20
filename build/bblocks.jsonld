@@ -1,0 +1,185 @@
+{
+  "@context": [
+    {
+      "@base": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined"
+    },
+    {
+      "bblocks": "https://www.opengis.net/def/bblocks/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "dct": "http://purl.org/dc/terms/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "prof": "http://www.w3.org/ns/dx/prof/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "modspec": "http://www.opengis.net/def/ont/modspec/",
+      "itemIdentifier": "@id",
+      "baseURL": "@id",
+      "name": "rdfs:label",
+      "abstract": "dct:abstract",
+      "description": "dct:description",
+      "status": {
+        "@id": "bblocks:status",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/status/"
+        }
+      },
+      "dateTimeAddition": {
+        "@id": "dct:created",
+        "@type": "xsd:dateTime"
+      },
+      "version": "dct:hasVersion",
+      "dateOfLastChange": {
+        "@id": "dct:modified",
+        "@type": "xsd:date"
+      },
+      "scope": {
+        "@id": "bblocks:scope",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/bblocks/scope/"
+        }
+      },
+      "sources": {
+        "@id": "dct:source",
+        "@context": {
+          "title": "rdfs:label",
+          "link": "@id"
+        }
+      },
+      "schema": {
+        "@id": "bblocks:hasSchema",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "dct:format"
+      },
+      "ldContext": {
+        "@id": "bblocks:hasJsonLdContext",
+        "@type": "@id"
+      },
+      "sourceLdContext": {
+        "@id": "bblocks:hasSourceJsonLdContext",
+        "@type": "@id"
+      },
+      "documentation": {
+        "@id": "dct:description",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "dct:identifier",
+        "@context": {
+          "mediatype": "dct:format",
+          "url": "rdfs:isDefinedBy"
+        }
+      },
+      "hasConcepts": {
+        "@reverse": "skos:inScheme"
+      },
+      "dependsOn": {
+        "@id": "bblocks:dependsOn",
+        "@type": "@id"
+      },
+      "profileOf": {
+        "@id": "prof:isProfileOf",
+        "@type": "@id"
+      },
+      "tags": "dcat:keyword",
+      "shaclRules": {
+        "@id": "bblocks:hasShaclRule",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "rdfs:seeAlso"
+      },
+      "validationReport": {
+        "@id": "bblocks:hasValidationReport",
+        "@type": "@id"
+      },
+      "imports": {
+        "@id": "bblocks:imports",
+        "@type": "@id"
+      },
+      "conformanceClasses": {
+        "@id": "modspec:class",
+        "@type": "@id"
+      }
+    }
+  ],
+  "name": "Building Blocks - Analytical Transparency",
+  "abstract": "Building Blocks to record inputs, outputs and activities for analytical processes, together with quality and certification activities.\n",
+  "description": "These building blocks build on standard models to define the typical types of activities required for transparency of derivation of information products.\n\nThese may be further specialised for particular types of analytical processes.\n",
+  "modified": "2024-08-20T07:08:06.827092",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"5ce42fc8f0c7c2cd010ceeabe2fd70a23f1ee2b0",
+      "shortCommitId": "\"5ce42f",
+      "date": "2024-08-15T07:14:25+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/surroundaustralia/analytic-transparency",
+  "gitHubRepository": "https://github.com/surroundaustralia/analytic-transparency/blob/master/",
+  "baseURL": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/",
+  "viewerURL": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/",
+  "validationReport": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/tests/report.html",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://ogcincubator.github.io/bblock-prov-schema/build/register.json",
+    "https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json"
+  ],
+  "@type": [
+    "skos:ConceptScheme",
+    "dcat:Catalog"
+  ],
+  "skos:prefLabel": "Building Blocks - Analytical Transparency",
+  "hasConcepts": [
+    {
+      "itemIdentifier": "sop.at.activities.certification",
+      "name": "Certification Activity",
+      "abstract": "A certification activity",
+      "status": "under-development",
+      "dateTimeAddition": "2023-05-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2024-08-20",
+      "sources": [],
+      "maturity": "development",
+      "scope": "unstable",
+      "dependsOn": [
+        "ogc.ogc-utils.prov"
+      ],
+      "tags": [
+        "prov"
+      ],
+      "group": "Activities",
+      "highlighted": true,
+      "shaclRules": {},
+      "schema": {
+        "application/yaml": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/schema.json"
+      },
+      "sourceSchema": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/certification/schema.yaml",
+      "ldContext": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/context.jsonld",
+      "sourceFiles": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/certification/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/surroundaustralia/analytic-transparency/blob/master/build/tests/at/activities/certification/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/markdown/at/activities/certification/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/json-full/at/activities/certification/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.certification"
+        }
+      },
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    }
+  ]
+}

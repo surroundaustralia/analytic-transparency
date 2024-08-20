@@ -1,0 +1,26 @@
+Validation report for sop.at.activities.certification - Certification Activity
+Generated 2024-08-20T07:08:07.861163+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using certification-fail.json from test resources
+JSON-LD context is present - uplifting
+Output JSON-LD certification-fail.jsonld created
+Output Turtle certification-fail.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'Activity' is not of type 'array'
+
+Failed validating 'type' in schema[0]['allOf'][1]['properties']['provType']:
+    {'contains': {'const': 'Certification', 'type': 'string'},
+     'type': 'array'}
+
+On instance['provType']:
+    'Activity'
+=== End JSON Schema ===
+
