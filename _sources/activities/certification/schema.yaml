@@ -1,0 +1,16 @@
+description: Certification activity
+$defs:
+  Certification:
+    allOf:
+      - $ref: bblocks://ogc.ogc-utils.prov#/$defs/Activity
+      - properties:
+          provType:
+            type: array
+            contains:
+              type: string
+              const: Certification
+        required:
+          - provType
+
+anyOf:
+  - $ref: "#/$defs/Certification"

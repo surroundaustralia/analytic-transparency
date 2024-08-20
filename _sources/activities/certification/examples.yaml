@@ -1,0 +1,24 @@
+## Prefixes will be used for all RDF Turtle resources so that they can be omitted from the actual snippets
+# prefixes:
+#   dct: http://purl.org/dc/terms/
+
+## List of examples
+examples:
+  - title: Certification
+
+    ## Markdown content that will be shown for the example.
+    content:
+      Shows a certification activity with a positive result.
+
+    ## Base URI for semantic uplift
+    base-uri: http://example.com/features/
+
+    ## The example can define its own prefixes, that will be merged with the global ones
+    # prefixes:
+    #   ex: http://example.com/
+
+    ## List of code snippets for this example
+    snippets:
+      - language: json
+        # Reference to file
+        ref: examples/certification.json
