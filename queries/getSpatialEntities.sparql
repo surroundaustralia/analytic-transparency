@@ -1,0 +1,11 @@
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix geo:    <http://www.opengis.net/ont/geosparql#>
+SELECT $entity ?label  ?geojson ?wkt
+WHERE {
+    $entity geo:hasGeometry ?g .
+    OPTIONAL { ?g geo:asGeoJSON ?geojson }
+    OPTIONAL { ?g geo:asWKT ?wkt }
+    OPTIONAL { $entity rdfs:label ?label }
+
+       
+}

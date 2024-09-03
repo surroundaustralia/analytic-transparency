@@ -1,6 +1,6 @@
 {
-  "name": "Certification Activity",
-  "abstract": "A certification activity",
+  "name": "Aggregation Activity",
+  "abstract": "An aggregation activity integrates a stream of observations into a persistent archive.",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",
   "itemClass": "schema",

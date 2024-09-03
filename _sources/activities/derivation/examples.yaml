@@ -1,0 +1,24 @@
+## Prefixes will be used for all RDF Turtle resources so that they can be omitted from the actual snippets
+# prefixes:
+#   dct: http://purl.org/dc/terms/
+
+## List of examples
+examples:
+  - title: Derivation
+
+    ## Markdown content that will be shown for the example.
+    content:
+      Shows a derivation activity with a positive result.
+
+    ## Base URI for semantic uplift
+    base-uri: http://example.com/activities/
+
+    ## The example can define its own prefixes, that will be merged with the global ones
+    prefixes:
+      mydata: http://example.com/datasets/
+
+    ## List of code snippets for this example
+    snippets:
+      - language: json
+        # Reference to file
+        ref: examples/derivation.json

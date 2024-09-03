@@ -1,0 +1,8 @@
+prefix prov: <http://www.w3.org/ns/prov#>
+SELECT $entity ?p ?plabel ?o ?olabel
+WHERE {
+    $entity  ?p ?o .
+    OPTIONAL { ?p rdfs:label ?plabel }
+    OPTIONAL { ?o rdfs:label ?olabel }
+       
+}

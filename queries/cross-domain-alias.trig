@@ -1,0 +1,3 @@
+<tag:stardog:api:graph:aliases> {
+  <tag:cross-domain-model> <tag:stardog:api:graph:alias> <https://www.w3.org/ns/prov> .
+}

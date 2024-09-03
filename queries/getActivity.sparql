@@ -1,0 +1,9 @@
+prefix prov: <http://www.w3.org/ns/prov#>
+SELECT ?A ?p ?plabel ?o ?olabel
+WHERE {
+    $entity prov:wasGeneratedBy ?A .
+    ?A ?p ?o .
+    OPTIONAL { ?p rdfs:label ?plabel }
+    OPTIONAL { ?o rdfs:label ?olabel }
+       
+}

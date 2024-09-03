@@ -1,0 +1,65 @@
+@prefix mydata: <http://example.com/data/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix sdo:    <https://schema.org/> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:     <http://example.org/> .
+@prefix geo:    <http://www.opengis.net/ont/geosparql#> .
+@prefix sf:     <http://www.opengis.net/ont/sf#> .
+
+
+<http://example.com/activities/add1>
+    a                      prov:Activity ;
+    rdfs:label             "Adder-run1" ;
+    prov:endedAtTime       "2029-01-01T22:05:19+02:00"^^xsd:dateTime ;
+    prov:generated         mydata:c ;
+    prov:used              mydata:a, mydata:b ;
+    prov:wasAssociatedWith <http://example.com/agents/adder> .
+
+mydata:a
+    a          prov:Entity ;
+    rdfs:label "A" ;
+    sdo:value  1
+.
+
+mydata:b
+    a          prov:Entity ;
+    rdfs:label "B" ;
+    sdo:value  2
+.
+
+mydata:c
+    a               <http://example.com/data/results/c> ;
+    geo:hasGeometry [ geo:asWKT """POLYGON((150.5000 -34.0000, 150.5020 -34.0005, 150.5040 -34.0010, 150.5060 -34.0015,
+        150.5080 -34.0020, 150.5100 -34.0025, 150.5120 -34.0030, 150.5140 -34.0035,
+                         150.5160 -34.0040, 150.5180 -34.0045, 150.5200 -34.0050, 150.5220 -34.0045,
+                         150.5240 -34.0040, 150.5260 -34.0035, 150.5280 -34.0030, 150.5300 -34.0025,
+                         150.5280 -34.0020, 150.5260 -34.0015, 150.5240 -34.0010, 150.5220 -34.0005,
+                         150.5200 -34.0000, 150.5180 -34.0005, 150.5160 -34.0010, 150.5140 -34.0015,
+                         150.5120 -34.0020, 150.5100 -34.0025, 150.5080 -34.0030, 150.5060 -34.0025,
+                         150.5040 -34.0020, 150.5020 -34.0015, 150.5000 -34.0010, 150.5000 -34.0000))"""^^geo:wktLiteral ;
+                        geo:asGeoJSON """{
+        "type": "Polygon",
+        "coordinates": [[
+            [150.5000, -34.0000], [150.5020, -34.0005], [150.5040, -34.0010], [150.5060, -34.0015],
+            [150.5080, -34.0020], [150.5100, -34.0025], [150.5120, -34.0030], [150.5140, -34.0035],
+            [150.5160, -34.0040], [150.5180, -34.0045], [150.5200, -34.0050], [150.5220, -34.0045],
+            [150.5240, -34.0040], [150.5260, -34.0035], [150.5280, -34.0030], [150.5300, -34.0025],
+            [150.5280, -34.0020], [150.5260, -34.0015], [150.5240, -34.0010], [150.5220, -34.0005],
+            [150.5200, -34.0000], [150.5180, -34.0005], [150.5160, -34.0010], [150.5140, -34.0015],
+            [150.5120, -34.0020], [150.5100, -34.0025], [150.5080, -34.0030], [150.5060, -34.0025],
+            [150.5040, -34.0020], [150.5020, -34.0015], [150.5000, -34.0010], [150.5000, -34.0000]
+        ]]
+    }"""^^geo:geoJSONLiteral
+                    ];
+
+    rdfs:label "C" ;
+    sdo:value  3 ;
+    prov:wasDerivedFrom mydata:a, mydata:b ;
+    prov:wasGeneratedBy <http://example.com/activities/add1> .
+
+<http://example.com/agents/adder>
+    a               prov:Agent ;
+    rdfs:label      "Add" ;
+    sdo:description "Adds all input values"
+.
