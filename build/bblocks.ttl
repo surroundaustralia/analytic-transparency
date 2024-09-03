@@ -7,6 +7,29 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/sop.at.activities.aggregation> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Aggregation Activity" ;
+    dct:abstract "An aggregation activity integrates a stream of observations into a persistent archive." ;
+    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/markdown/at/activities/aggregation/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.aggregation" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/json-full/at/activities/aggregation/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2024-09-03"^^xsd:date ;
+    skos:inScheme <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/> ;
+    dcat:keyword "prov" ;
+    bblocks:dependsOn <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/ogc.ogc-utils.prov> ;
+    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/context.jsonld> ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/schema.json>,
+        <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
 <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/sop.at.activities.certification> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
@@ -15,18 +38,41 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/json-full/at/activities/certification/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.certification" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/markdown/at/activities/certification/index.md" ] ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/markdown/at/activities/certification/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.certification" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2024-08-20"^^xsd:date ;
+    dct:modified "2024-09-03"^^xsd:date ;
     skos:inScheme <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/> ;
     dcat:keyword "prov" ;
     bblocks:dependsOn <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/ogc.ogc-utils.prov> ;
     bblocks:hasJsonLdContext <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/context.jsonld> ;
     bblocks:hasSchema <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/schema.json>,
         <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/sop.at.activities.derivation> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Derivation Activity" ;
+    dct:abstract "A derivation activity takes a data set and derives a new data set from it. It must reference an Entity which defines the derivation function, allowing identification of the derivation process." ;
+    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.derivation" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/markdown/at/activities/derivation/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/json-full/at/activities/derivation/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2024-09-03"^^xsd:date ;
+    skos:inScheme <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/> ;
+    dcat:keyword "prov" ;
+    bblocks:dependsOn <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/ogc.ogc-utils.prov> ;
+    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/derivation/context.jsonld> ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/derivation/schema.json>,
+        <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/derivation/schema.yaml> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
@@ -46,11 +92,11 @@ These may be further specialised for particular types of analytical processes.
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-08-20T07:08:07.936835"^^xsd:dateTime ;
-    prov:startedAtTime "2024-08-20T07:08:07.881333"^^xsd:dateTime ;
+    prov:endedAtTime "2024-09-03T04:59:46.046877"^^xsd:dateTime ;
+    prov:startedAtTime "2024-09-03T04:59:45.988989"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:74c2b9c5083031de38ec8017573cf0f6e4534c86" ;
+            dct:hasVersion "git:564766c3167324abb97ef03ba81f4908ba18fdce" ;
             rdfs:seeAlso <https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;

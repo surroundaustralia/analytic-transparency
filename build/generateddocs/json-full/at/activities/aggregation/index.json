@@ -1,0 +1,66 @@
+
+
+{
+  "itemIdentifier": "sop.at.activities.aggregation",
+  "name": "Aggregation Activity",
+  "abstract": "An aggregation activity integrates a stream of observations into a persistent archive.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-05-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ccm",
+  "version": "1.0",
+  "dateOfLastChange": "2024-09-03",
+  "sources": [],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.ogc-utils.prov"
+  ],
+  "tags": [
+    "prov"
+  ],
+  "group": "Activities",
+  "highlighted": true,
+  "shaclRules": {},
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/aggregation/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/aggregation/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/surroundaustralia/analytic-transparency/blob/master/build/tests/at/activities/aggregation/",
+  "description": "## Aggregation Activity \n\nThis building block provides a JSON schema based on the PROV model for an activity that performs an aggregation over dimensions of a set of data observations.\n\nThe aggregation function must be described using an appropriate AggregationFunction entity.\n\n\n",
+  "examples": [
+    {
+      "title": "Aggregation",
+      "content": "Shows a aggregation activity with a positive result.",
+      "base-uri": "http://example.com/activities/",
+      "prefixes": {
+        "myData": "http://example.com/datasets/"
+      },
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/aggregation.json",
+          "code": "{\n  \"provType\": [ \"Activity\", \"Aggregation\" ],\n  \"id\": \"aggregation_example\",\n  \"endedAtTime\": \"2029-01-01T22:05:19+02:00\",\n  \"wasAssociatedWith\": \"eg_agents:bc-3\",\n  \"generated\": { \"id\": \"myData:YearlySummary\",\n    \"wasDerivedFrom\" : \"myData:WeeklyRecords\",\n    \"wasGeneratedBy\" : \"aggregation_example\"\n  },\n  \"used\": \"myData:WeeklyRecords\"\n}\n\n\n\n\n",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/tests/at/activities/aggregation/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"provType\": [\n    \"Activity\",\n    \"Aggregation\"\n  ],\n  \"id\": \"aggregation_example\",\n  \"endedAtTime\": \"2029-01-01T22:05:19+02:00\",\n  \"wasAssociatedWith\": \"eg_agents:bc-3\",\n  \"generated\": {\n    \"id\": \"myData:YearlySummary\",\n    \"wasDerivedFrom\": \"myData:WeeklyRecords\",\n    \"wasGeneratedBy\": \"aggregation_example\"\n  },\n  \"used\": \"myData:WeeklyRecords\",\n  \"@context\": [\n    {\n      \"myData\": \"http://example.com/datasets/\"\n    },\n    \"https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/context.jsonld\"\n  ]\n}",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/tests/at/activities/aggregation/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix myData: <http://example.com/datasets/> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/activities/aggregation_example> prov:endedAtTime \"2029-01-01T22:05:19+02:00\"^^xsd:dateTime ;\n    prov:generated myData:YearlySummary ;\n    prov:used myData:WeeklyRecords ;\n    prov:wasAssociatedWith <http://example.com/activities/eg_agents:bc-3> .\n\nmyData:YearlySummary prov:wasDerivedFrom myData:WeeklyRecords ;\n    prov:wasGeneratedBy <http://example.com/activities/aggregation_example> .\n\n",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/tests/at/activities/aggregation/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "description: Aggregation activity\n$defs:\n  Aggregation:\n    allOf:\n    - $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Activity\n    - properties:\n        provType:\n          type: array\n          contains:\n            type: string\n            const: Aggregation\n      required:\n      - provType\n      - generated\n      - used\nanyOf:\n- $ref: '#/$defs/Aggregation'\n",
+  "gitRepository": "https://github.com/surroundaustralia/analytic-transparency",
+  "gitPath": "_sources/activities/aggregation"
+}

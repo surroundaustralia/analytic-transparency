@@ -106,12 +106,12 @@
   "name": "Building Blocks - Analytical Transparency",
   "abstract": "Building Blocks to record inputs, outputs and activities for analytical processes, together with quality and certification activities.\n",
   "description": "These building blocks build on standard models to define the typical types of activities required for transparency of derivation of information products.\n\nThese may be further specialised for particular types of analytical processes.\n",
-  "modified": "2024-08-20T07:08:06.827092",
+  "modified": "2024-09-03T04:59:43.207617",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"5ce42fc8f0c7c2cd010ceeabe2fd70a23f1ee2b0",
-      "shortCommitId": "\"5ce42f",
-      "date": "2024-08-15T07:14:25+00:00\""
+      "commitId": "\"620914fd000dd7256ed3a733927e9a6948b558b6",
+      "shortCommitId": "\"620914",
+      "date": "2024-08-22T11:42:38+00:00\""
     }
   },
   "gitRepository": "https://github.com/surroundaustralia/analytic-transparency",
@@ -131,15 +131,66 @@
   "skos:prefLabel": "Building Blocks - Analytical Transparency",
   "hasConcepts": [
     {
+      "itemIdentifier": "sop.at.activities.aggregation",
+      "name": "Aggregation Activity",
+      "abstract": "An aggregation activity integrates a stream of observations into a persistent archive.",
+      "status": "under-development",
+      "dateTimeAddition": "2023-05-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ccm",
+      "version": "1.0",
+      "dateOfLastChange": "2024-09-03",
+      "sources": [],
+      "maturity": "development",
+      "scope": "unstable",
+      "dependsOn": [
+        "ogc.ogc-utils.prov"
+      ],
+      "tags": [
+        "prov"
+      ],
+      "group": "Activities",
+      "highlighted": true,
+      "shaclRules": {},
+      "schema": {
+        "application/yaml": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/schema.json"
+      },
+      "sourceSchema": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/aggregation/schema.yaml",
+      "ldContext": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/context.jsonld",
+      "sourceFiles": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/aggregation/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/surroundaustralia/analytic-transparency/blob/master/build/tests/at/activities/aggregation/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/markdown/at/activities/aggregation/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/json-full/at/activities/aggregation/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.aggregation"
+        }
+      },
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
       "itemIdentifier": "sop.at.activities.certification",
       "name": "Certification Activity",
       "abstract": "A certification activity",
       "status": "under-development",
       "dateTimeAddition": "2023-05-19T00:00:00Z",
       "itemClass": "schema",
-      "register": "ogc-building-block-examples",
+      "register": "ccm",
       "version": "1.0",
-      "dateOfLastChange": "2024-08-20",
+      "dateOfLastChange": "2024-09-03",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -173,6 +224,57 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.certification"
+        }
+      },
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ]
+    },
+    {
+      "itemIdentifier": "sop.at.activities.derivation",
+      "name": "Derivation Activity",
+      "abstract": "A derivation activity takes a data set and derives a new data set from it. It must reference an Entity which defines the derivation function, allowing identification of the derivation process.",
+      "status": "under-development",
+      "dateTimeAddition": "2023-05-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ccm",
+      "version": "1.0",
+      "dateOfLastChange": "2024-09-03",
+      "sources": [],
+      "maturity": "development",
+      "scope": "unstable",
+      "dependsOn": [
+        "ogc.ogc-utils.prov"
+      ],
+      "tags": [
+        "prov"
+      ],
+      "group": "Activities",
+      "highlighted": true,
+      "shaclRules": {},
+      "schema": {
+        "application/yaml": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/derivation/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/derivation/schema.json"
+      },
+      "sourceSchema": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/derivation/schema.yaml",
+      "ldContext": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/derivation/context.jsonld",
+      "sourceFiles": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/derivation/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/surroundaustralia/analytic-transparency/blob/master/build/tests/at/activities/derivation/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/markdown/at/activities/derivation/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/json-full/at/activities/derivation/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.derivation"
         }
       },
       "@type": [

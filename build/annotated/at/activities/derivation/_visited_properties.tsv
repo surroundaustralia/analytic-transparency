@@ -1,0 +1,96 @@
+path	@id
+/id	@id
+/type	
+/activityType	@type
+/prov:type	
+/endedAtTime	http://www.w3.org/ns/prov#endedAtTime
+/wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith
+/wasAssociatedWith/href	http://www.w3.org/ns/oa#hasTarget
+/wasAssociatedWith/rel	http://www.iana.org/assignments/relation
+/wasAssociatedWith/anchor	
+/wasAssociatedWith/type	http://purl.org/dc/terms/type
+/wasAssociatedWith/hreflang	http://purl.org/dc/terms/language
+/wasAssociatedWith/title	http://www.w3.org/2000/01/rdf-schema#label
+/wasAssociatedWith/length	http://purl.org/dc/terms/extent
+/wasAssociatedWith/agentType	@type
+/wasAssociatedWith/name	http://www.w3.org/2000/01/rdf-schema#label
+/wasAssociatedWith/id	@id
+/wasAssociatedWith/actedOnBehalfOf	http://www.w3.org/ns/prov#actedOnBehalfOf
+/wasAssociatedWith/atLocation	http://www.w3.org/ns/prov#atLocation
+/wasAssociatedWith/qualifiedDelegation	http://www.w3.org/ns/prov#qualifiedDelegation
+/wasAssociatedWith/qualifiedDelegation/id	@id
+/wasAssociatedWith/qualifiedDelegation/type	
+/wasAssociatedWith/qualifiedDelegation/agent	http://www.w3.org/ns/prov#agent
+/wasAssociatedWith/qualifiedDelegation/hadActivity	http://www.w3.org/ns/prov#hadActivity
+/wasAssociatedWith/wasInfluencedBy	http://www.w3.org/ns/prov#wasInfluencedBy
+/wasAssociatedWith/wasInfluencedBy/id	@id
+/wasAssociatedWith/wasInfluencedBy/featureType	@type
+/wasAssociatedWith/wasInfluencedBy/entityType	@type
+/wasAssociatedWith/wasInfluencedBy/has_provenance	http://purl.org/dc/terms/provenance
+/wasAssociatedWith/wasInfluencedBy/wasGeneratedBy	http://www.w3.org/ns/prov#wasGeneratedBy
+/wasAssociatedWith/wasInfluencedBy/wasAttributedTo	http://www.w3.org/ns/prov#wasAttributedTo
+/wasAssociatedWith/wasInfluencedBy/wasDerivedFrom	http://www.w3.org/ns/prov#wasDerivedFrom
+/wasAssociatedWith/wasInfluencedBy/alternateOf	http://www.w3.org/ns/prov#alternateOf
+/wasAssociatedWith/wasInfluencedBy/hadPrimarySource	http://www.w3.org/ns/prov#hadPrimarySource
+/wasAssociatedWith/wasInfluencedBy/specializationOf	http://www.w3.org/ns/prov#specializationOf
+/wasAssociatedWith/wasInfluencedBy/wasInvalidatedBy	http://www.w3.org/ns/prov#wasInvalidatedBy
+/wasAssociatedWith/wasInfluencedBy/wasQuotedFrom	http://www.w3.org/ns/prov#wasQuotedFrom
+/wasAssociatedWith/wasInfluencedBy/wasRevisionOf	http://www.w3.org/ns/prov#wasRevisionOf
+/wasAssociatedWith/wasInfluencedBy/atLocation	http://www.w3.org/ns/prov#atLocation
+/wasAssociatedWith/wasInfluencedBy/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
+/wasAssociatedWith/wasInfluencedBy/qualifiedGeneration	http://www.w3.org/ns/prov#qualifiedGeneration
+/wasAssociatedWith/wasInfluencedBy/qualifiedGeneration/id	@id
+/wasAssociatedWith/wasInfluencedBy/qualifiedGeneration/atTime	http://www.w3.org/ns/prov#atTime
+/wasAssociatedWith/wasInfluencedBy/qualifiedGeneration/hadRole	http://www.w3.org/ns/prov#hadRole
+/wasAssociatedWith/wasInfluencedBy/qualifiedGeneration/influencer	http://www.w3.org/ns/prov#influencer
+/wasAssociatedWith/wasInfluencedBy/qualifiedGeneration/hadActivity	http://www.w3.org/ns/prov#hadActivity
+/wasAssociatedWith/wasInfluencedBy/qualifiedGeneration/activity	http://www.w3.org/ns/prov#activity
+/wasAssociatedWith/wasInfluencedBy/qualifiedGeneration/type	
+/wasAssociatedWith/wasInfluencedBy/qualifiedInvalidation	http://www.w3.org/ns/prov#qualifiedInvalidation
+/wasAssociatedWith/wasInfluencedBy/qualifiedInvalidation/type	
+/wasAssociatedWith/wasInfluencedBy/qualifiedDerivation	http://www.w3.org/ns/prov#qualifiedDerivation
+/wasAssociatedWith/wasInfluencedBy/qualifiedAttribution	http://www.w3.org/ns/prov#qualifiedAttribution
+/wasAssociatedWith/wasInfluencedBy/qualifiedAttribution/id	@id
+/wasAssociatedWith/wasInfluencedBy/qualifiedAttribution/type	
+/wasAssociatedWith/wasInfluencedBy/qualifiedAttribution/agent	http://www.w3.org/ns/prov#agent
+/wasAssociatedWith/wasInfluencedBy/provType	@type
+/wasAssociatedWith/wasInfluencedBy/prov:type	
+/wasAssociatedWith/wasInfluencedBy/type	
+/wasAssociatedWith/wasInfluencedBy/hadMember	http://www.w3.org/ns/prov#hadMember
+/wasAssociatedWith/qualifiedInfluence	http://www.w3.org/ns/prov#qualifiedInfluence
+/wasAssociatedWith/qualifiedInfluence/id	@id
+/wasAssociatedWith/qualifiedInfluence/influencer	http://www.w3.org/ns/prov#influencer
+/wasAssociatedWith/qualifiedInfluence/entity	http://www.w3.org/ns/prov#entity
+/wasAssociatedWith/qualifiedInfluence/activity	http://www.w3.org/ns/prov#activity
+/wasAssociatedWith/qualifiedInfluence/agent	http://www.w3.org/ns/prov#agent
+/wasAssociatedWith/provType	@type
+/wasAssociatedWith/prov:type	
+/wasInformedBy	http://www.w3.org/ns/prov#wasInformedBy
+/used	http://www.w3.org/ns/prov#used
+/wasStartedBy	http://www.w3.org/ns/prov#wasStartedBy
+/wasEndedBy	http://www.w3.org/ns/prov#wasEndedBy
+/invalidated	http://www.w3.org/ns/prov#invalidated
+/generated	http://www.w3.org/ns/prov#generated
+/atLocation	http://www.w3.org/ns/prov#atLocation
+/qualifiedUsage	http://www.w3.org/ns/prov#qualifiedUsage
+/qualifiedUsage/id	@id
+/qualifiedUsage/type	
+/qualifiedUsage/atTime	http://www.w3.org/ns/prov#atTime
+/qualifiedUsage/entity	http://www.w3.org/ns/prov#entity
+/qualifiedCommunication	http://www.w3.org/ns/prov#qualifiedCommunication
+/qualifiedCommunication/type	
+/qualifiedStart	http://www.w3.org/ns/prov#qualifiedStart
+/qualifiedStart/id	@id
+/qualifiedStart/type	
+/qualifiedStart/atTime	http://www.w3.org/ns/prov#atTime
+/qualifiedStart/entity	http://www.w3.org/ns/prov#entity
+/qualifiedStart/hadActivity	http://www.w3.org/ns/prov#hadActivity
+/qualifiedEnd	http://www.w3.org/ns/prov#qualifiedEnd
+/qualifiedEnd/type	
+/qualifiedAssociation	http://www.w3.org/ns/prov#qualifiedAssociation
+/qualifiedAssociation/id	@id
+/qualifiedAssociation/type	
+/qualifiedAssociation/agent	http://www.w3.org/ns/prov#agent
+/qualifiedAssociation/hadRole	http://www.w3.org/ns/prov#hadRole
+/qualifiedAssociation/hadPlan	http://www.w3.org/ns/prov#hadPlan
+/provType	

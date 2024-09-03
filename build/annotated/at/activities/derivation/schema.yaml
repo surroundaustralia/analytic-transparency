@@ -1,0 +1,17 @@
+description: Derivation activity
+$defs:
+  Derivation:
+    allOf:
+    - $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Activity
+    - properties:
+        provType:
+          type: array
+          contains:
+            type: string
+            const: Derivation
+      required:
+      - provType
+      - generated
+      - used
+anyOf:
+- $ref: '#/$defs/Derivation'
