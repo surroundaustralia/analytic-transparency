@@ -106,7 +106,7 @@
   "name": "Building Blocks - Analytical Transparency",
   "abstract": "Building Blocks to record inputs, outputs and activities for analytical processes, together with quality and certification activities.\n",
   "description": "These building blocks build on standard models to define the typical types of activities required for transparency of derivation of information products.\n\nThese may be further specialised for particular types of analytical processes.\n",
-  "modified": "2024-10-31T04:23:06.106973",
+  "modified": "2024-10-31T04:23:56.571990",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"bff70fac492a7e2f3fe3779b0b9b150f4e315e8f",

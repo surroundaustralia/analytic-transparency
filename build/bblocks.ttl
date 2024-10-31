@@ -38,10 +38,10 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.certification" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/certification/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/certification/index.json" ] ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/certification/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/certification/index.md" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2024-10-31"^^xsd:date ;
     skos:inScheme <https://surroundaustralia.github.io/analytic-transparency/> ;
@@ -59,12 +59,12 @@
     rdfs:label "Derivation Activity" ;
     dct:abstract "A derivation activity takes a data set and derives a new data set from it. It must reference an Entity which defines the derivation function, allowing identification of the derivation process." ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.derivation" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/derivation/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/derivation/index.md" ] ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/derivation/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.derivation" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2024-10-31"^^xsd:date ;
     skos:inScheme <https://surroundaustralia.github.io/analytic-transparency/> ;
@@ -92,14 +92,14 @@ These may be further specialised for particular types of analytical processes.
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-10-31T04:23:09.518907"^^xsd:dateTime ;
-    prov:startedAtTime "2024-10-31T04:23:09.455949"^^xsd:dateTime ;
+    prov:endedAtTime "2024-10-31T04:23:58.906947"^^xsd:dateTime ;
+    prov:startedAtTime "2024-10-31T04:23:58.842404"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
         [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:e19b460515a08cb0005dd88accd8f0be31c97ef9" ;
+            dct:hasVersion "git:c2c12407ee2786e0d5ae20ac5cd3d89b0d9de575" ;
             rdfs:seeAlso <https://surroundaustralia.github.io/analytic-transparency/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
