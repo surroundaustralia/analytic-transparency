@@ -1,0 +1,88 @@
+@prefix mydata: <http://example.com/data/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix sdo:    <https://schema.org/> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:     <http://example.org/> .
+@prefix geo:    <http://www.opengis.net/ont/geosparql#> .
+@prefix sf:     <http://www.opengis.net/ont/sf#> .
+@prefix dim:    <https://surroundaustralia.com/models/datadimensions/> .
+
+
+mydata:pathA
+    a                   <http://example.com/data/auv/Path> ;
+    geo:hasGeometry     [
+                            #  geo:asWKT """LINESTRING (145.78076917651157 -16.902133432722124, 145.87159104353117 -16.83228182748823, 145.9873351627084 -16.85797537575563, 145.96665082383618 -16.931567252341438, 145.97267745053028 -16.968126465319628, 146.0258554346122 -16.9541957104595)"""^^geo:wktLiteral ;
+                            geo:asGeoJSON """{
+        "coordinates": [
+          [
+            145.78076917651157,
+            -16.902133432722124
+          ],
+          [
+            145.87159104353117,
+            -16.83228182748823
+          ],
+          [
+            145.9873351627084,
+            -16.85797537575563
+          ],
+          [
+            145.96665082383618,
+            -16.931567252341438
+          ],
+          [
+            145.97267745053028,
+            -16.968126465319628
+          ],
+          [
+            146.0258554346122,
+            -16.9541957104595
+          ]
+        ],
+        "type": "LineString"
+      }"""^^geo:geoJSONLiteral ] ;
+    dim:hasDimValues    ex:assessmentPathA ;
+    rdfs:label          "Path A" ;
+    prov:wasGeneratedBy <http://example.com/activities/router-q1> .
+
+<http://example.com/activities/router-q1>
+    a                      prov:Activity ;
+    rdfs:label             "Router-q1" ;
+    prov:endedAtTime       "2029-01-01T22:05:19+02:00"^^xsd:dateTime ;
+    prov:generated         mydata:pathA ;
+    prov:wasAssociatedWith <http://example.com/agents/auv-router> .
+
+
+<http://example.com/agents/auv-router>
+    a               prov:Agent ;
+    rdfs:label      "Route planner" ;
+    sdo:description "Plans and assesses route options for AUV missions."
+.
+
+ex:assessmentPathA
+    a dim:DimensionValueSet ;
+    dim:valueRange 5 ;
+    dim:value [ dim:dimension ex:dim1 ;
+                sdo:value     3 ], [ dim:dimension ex:dim2 ;
+                                     sdo:value     1 ], [ dim:dimension ex:dim3 ;
+                                                          sdo:value     2 ] ;
+.
+
+ex:dim1
+    a            dim:Dimension ;
+    rdfs:label   "Foo" ;
+    dim:order    1 ;
+    dim:maxValue 5 .
+
+ex:dim2
+    a            dim:Dimension ;
+    rdfs:label   "Bar" ;
+    dim:order    3 ;
+    dim:maxValue 5 .
+
+ex:dim3
+    a            dim:Dimension ;
+    rdfs:label   "Dang" ;
+    dim:order    2 ;
+    dim:maxValue 5 .
