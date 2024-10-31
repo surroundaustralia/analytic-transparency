@@ -1,4 +1,5 @@
 {
+  "@context": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/certification/context.jsonld",
   "provType": "Activity",
   "id": "someActivity_1",
   "endedAtTime": "2029-01-01T22:05:19+02:00",
@@ -13,6 +14,5 @@
         "rel": "related"
       }
     ]
-  },
-  "@context": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/context.jsonld"
+  }
 }

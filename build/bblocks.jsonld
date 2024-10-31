@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined"
+      "@base": "https://surroundaustralia.github.io/analytic-transparency"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -106,19 +106,19 @@
   "name": "Building Blocks - Analytical Transparency",
   "abstract": "Building Blocks to record inputs, outputs and activities for analytical processes, together with quality and certification activities.\n",
   "description": "These building blocks build on standard models to define the typical types of activities required for transparency of derivation of information products.\n\nThese may be further specialised for particular types of analytical processes.\n",
-  "modified": "2024-09-03T04:59:43.207617",
+  "modified": "2024-10-31T01:04:18.620968",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"620914fd000dd7256ed3a733927e9a6948b558b6",
-      "shortCommitId": "\"620914",
-      "date": "2024-08-22T11:42:38+00:00\""
+      "commitId": "\"bff70fac492a7e2f3fe3779b0b9b150f4e315e8f",
+      "shortCommitId": "\"bff70f",
+      "date": "2024-10-30T09:32:11+00:00\""
     }
   },
   "gitRepository": "https://github.com/surroundaustralia/analytic-transparency",
   "gitHubRepository": "https://github.com/surroundaustralia/analytic-transparency/blob/master/",
-  "baseURL": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/",
-  "viewerURL": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/",
-  "validationReport": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/tests/report.html",
+  "baseURL": "https://surroundaustralia.github.io/analytic-transparency/",
+  "viewerURL": "https://surroundaustralia.github.io/analytic-transparency/",
+  "validationReport": "https://surroundaustralia.github.io/analytic-transparency/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json",
     "https://ogcincubator.github.io/bblock-prov-schema/build/register.json",
@@ -139,7 +139,7 @@
       "itemClass": "schema",
       "register": "ccm",
       "version": "1.0",
-      "dateOfLastChange": "2024-09-03",
+      "dateOfLastChange": "2023-05-19",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -153,26 +153,26 @@
       "highlighted": true,
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/schema.json"
+        "application/yaml": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/aggregation/schema.yaml",
+        "application/json": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/aggregation/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/aggregation/schema.yaml",
-      "ldContext": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/aggregation/",
+      "sourceSchema": "https://surroundaustralia.github.io/analytic-transparency/_sources/activities/aggregation/schema.yaml",
+      "ldContext": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/aggregation/context.jsonld",
+      "sourceFiles": "https://surroundaustralia.github.io/analytic-transparency/_sources/activities/aggregation/",
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/analytic-transparency/blob/master/build/tests/at/activities/aggregation/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/markdown/at/activities/aggregation/index.md"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/aggregation/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/json-full/at/activities/aggregation/index.json"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/aggregation/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.aggregation"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.aggregation"
         }
       },
       "@type": [
@@ -190,7 +190,7 @@
       "itemClass": "schema",
       "register": "ccm",
       "version": "1.0",
-      "dateOfLastChange": "2024-09-03",
+      "dateOfLastChange": "2023-05-19",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -204,26 +204,26 @@
       "highlighted": true,
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/schema.json"
+        "application/yaml": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/certification/schema.yaml",
+        "application/json": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/certification/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/certification/schema.yaml",
-      "ldContext": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/certification/",
+      "sourceSchema": "https://surroundaustralia.github.io/analytic-transparency/_sources/activities/certification/schema.yaml",
+      "ldContext": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/certification/context.jsonld",
+      "sourceFiles": "https://surroundaustralia.github.io/analytic-transparency/_sources/activities/certification/",
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/analytic-transparency/blob/master/build/tests/at/activities/certification/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/markdown/at/activities/certification/index.md"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/certification/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/json-full/at/activities/certification/index.json"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/certification/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.certification"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.certification"
         }
       },
       "@type": [
@@ -241,7 +241,7 @@
       "itemClass": "schema",
       "register": "ccm",
       "version": "1.0",
-      "dateOfLastChange": "2024-09-03",
+      "dateOfLastChange": "2023-05-19",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -255,26 +255,26 @@
       "highlighted": true,
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/derivation/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/derivation/schema.json"
+        "application/yaml": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/derivation/schema.yaml",
+        "application/json": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/derivation/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/derivation/schema.yaml",
-      "ldContext": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/derivation/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/derivation/",
+      "sourceSchema": "https://surroundaustralia.github.io/analytic-transparency/_sources/activities/derivation/schema.yaml",
+      "ldContext": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/derivation/context.jsonld",
+      "sourceFiles": "https://surroundaustralia.github.io/analytic-transparency/_sources/activities/derivation/",
       "validationPassed": true,
       "testOutputs": "https://github.com/surroundaustralia/analytic-transparency/blob/master/build/tests/at/activities/derivation/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/markdown/at/activities/derivation/index.md"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/derivation/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/generateddocs/json-full/at/activities/derivation/index.json"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/derivation/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/bblock/sop.at.activities.derivation"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.derivation"
         }
       },
       "@type": [

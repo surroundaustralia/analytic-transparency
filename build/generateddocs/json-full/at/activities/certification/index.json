@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ccm",
   "version": "1.0",
-  "dateOfLastChange": "2024-09-03",
+  "dateOfLastChange": "2023-05-19",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -23,12 +23,12 @@
   "highlighted": true,
   "shaclRules": {},
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/schema.json"
+    "application/yaml": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/certification/schema.yaml",
+    "application/json": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/certification/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/certification/schema.yaml",
-  "ldContext": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/_sources/activities/certification/",
+  "sourceSchema": "https://surroundaustralia.github.io/analytic-transparency/_sources/activities/certification/schema.yaml",
+  "ldContext": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/certification/context.jsonld",
+  "sourceFiles": "https://surroundaustralia.github.io/analytic-transparency/_sources/activities/certification/",
   "validationPassed": true,
   "testOutputs": "https://github.com/surroundaustralia/analytic-transparency/blob/master/build/tests/at/activities/certification/",
   "description": "## Certification Activity \n\nThis building block provides a JSON schema based on the PROV model for an activity that performs a certification.\nIf a certificate is present, then the activity completed successfully.\n\nIf no certificate was produced a certification report must be present.\n\n\n",
@@ -42,17 +42,17 @@
           "language": "json",
           "ref": "examples/certification.json",
           "code": "{\n  \"provType\": [ \"Activity\", \"Certification\" ],\n  \"id\": \"certification_example\",\n  \"endedAtTime\": \"2029-01-01T22:05:19+02:00\",\n  \"wasAssociatedWith\": \"eg_agents:bc-3\",\n  \"generated\": {\n    \"provType\": \"Certificate\",\n    \"id\": \"GoldStar\",\n    \"wasAttributedTo\": \"eg_agents:myTeacher\",\n    \"links\": [\n      {\n        \"href\": \"https://some.gov/linktoact/\",\n        \"rel\": \"related\"\n      }\n    ]\n  }\n}\n\n\n\n\n",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/tests/at/activities/certification/example_1_1.json"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/build/tests/at/activities/certification/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"provType\": [\n    \"Activity\",\n    \"Certification\"\n  ],\n  \"id\": \"certification_example\",\n  \"endedAtTime\": \"2029-01-01T22:05:19+02:00\",\n  \"wasAssociatedWith\": \"eg_agents:bc-3\",\n  \"generated\": {\n    \"provType\": \"Certificate\",\n    \"id\": \"GoldStar\",\n    \"wasAttributedTo\": \"eg_agents:myTeacher\",\n    \"links\": [\n      {\n        \"href\": \"https://some.gov/linktoact/\",\n        \"rel\": \"related\"\n      }\n    ]\n  },\n  \"@context\": \"https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/context.jsonld\"\n}",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/tests/at/activities/certification/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/certification/context.jsonld\",\n  \"provType\": [\n    \"Activity\",\n    \"Certification\"\n  ],\n  \"id\": \"certification_example\",\n  \"endedAtTime\": \"2029-01-01T22:05:19+02:00\",\n  \"wasAssociatedWith\": \"eg_agents:bc-3\",\n  \"generated\": {\n    \"provType\": \"Certificate\",\n    \"id\": \"GoldStar\",\n    \"wasAttributedTo\": \"eg_agents:myTeacher\",\n    \"links\": [\n      {\n        \"href\": \"https://some.gov/linktoact/\",\n        \"rel\": \"related\"\n      }\n    ]\n  }\n}",
+          "url": "https://surroundaustralia.github.io/analytic-transparency/build/tests/at/activities/certification/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/certification_example> prov:endedAtTime \"2029-01-01T22:05:19+02:00\"^^xsd:dateTime ;\n    prov:generated <http://example.com/features/GoldStar> ;\n    prov:wasAssociatedWith <http://example.com/features/eg_agents:bc-3> .\n\n<http://example.com/features/GoldStar> a <http://example.com/features/Certificate> ;\n    rdfs:seeAlso [ ns1:relation <http://www.iana.org/assignments/relation/related> ;\n            oa:hasTarget <https://some.gov/linktoact/> ] ;\n    prov:wasAttributedTo <http://example.com/features/eg_agents:myTeacher> .\n\n",
-          "url": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/tests/at/activities/certification/example_1_1.ttl"
+          "url": "https://surroundaustralia.github.io/analytic-transparency/build/tests/at/activities/certification/example_1_1.ttl"
         }
       ]
     }

@@ -44,6 +44,12 @@ Shows a aggregation activity with a positive result.
 #### jsonld
 ```jsonld
 {
+  "@context": [
+    {
+      "myData": "http://example.com/datasets/"
+    },
+    "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/aggregation/context.jsonld"
+  ],
   "provType": [
     "Activity",
     "Aggregation"
@@ -56,13 +62,7 @@ Shows a aggregation activity with a positive result.
     "wasDerivedFrom": "myData:WeeklyRecords",
     "wasGeneratedBy": "aggregation_example"
   },
-  "used": "myData:WeeklyRecords",
-  "@context": [
-    {
-      "myData": "http://example.com/datasets/"
-    },
-    "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/context.jsonld"
-  ]
+  "used": "myData:WeeklyRecords"
 }
 ```
 
@@ -108,8 +108,8 @@ anyOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/schema.yaml)
+* YAML version: [schema.yaml](https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/aggregation/schema.json)
+* JSON version: [schema.json](https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/aggregation/schema.yaml)
 
 
 # JSON-LD Context
@@ -2122,7 +2122,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/aggregation/context.jsonld)
+[context.jsonld](https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/aggregation/context.jsonld)
 
 
 # For developers

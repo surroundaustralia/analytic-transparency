@@ -1,4 +1,10 @@
 {
+  "@context": [
+    {
+      "mydata": "http://example.com/datasets/"
+    },
+    "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/derivation/context.jsonld"
+  ],
   "provType": [
     "Activity",
     "Derivation"
@@ -11,11 +17,5 @@
     "wasDerivedFrom": "mydata:WeeklyRecords",
     "wasGeneratedBy": "derivation_example"
   },
-  "used": "mydata:WeeklyRecords",
-  "@context": [
-    {
-      "mydata": "http://example.com/datasets/"
-    },
-    "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/derivation/context.jsonld"
-  ]
+  "used": "mydata:WeeklyRecords"
 }

@@ -1,4 +1,5 @@
 {
+  "@context": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/certification/context.jsonld",
   "provType": [
     "Activity",
     "Certification"
@@ -16,6 +17,5 @@
         "rel": "related"
       }
     ]
-  },
-  "@context": "https://raw.githubusercontent.com/surroundaustralia/analytic-transparency/undefined/build/annotated/at/activities/certification/context.jsonld"
+  }
 }
