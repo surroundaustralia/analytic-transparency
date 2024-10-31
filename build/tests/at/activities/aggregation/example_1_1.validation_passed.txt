@@ -1,5 +1,5 @@
 Validation report for sop.at.activities.aggregation - Aggregation Activity
-Generated 2024-10-31T01:04:20.963420+00:00
+Generated 2024-10-31T04:23:08.955371+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
