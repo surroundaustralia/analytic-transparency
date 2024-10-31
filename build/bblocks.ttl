@@ -13,14 +13,14 @@
     rdfs:label "Aggregation Activity" ;
     dct:abstract "An aggregation activity integrates a stream of observations into a persistent archive." ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.aggregation" ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/aggregation/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/aggregation/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.aggregation" ] ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/aggregation/index.json" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2024-10-31"^^xsd:date ;
+    dct:modified "2023-05-19"^^xsd:date ;
     skos:inScheme <https://surroundaustralia.github.io/analytic-transparency/> ;
     dcat:keyword "prov" ;
     bblocks:dependsOn <https://surroundaustralia.github.io/ogc.ogc-utils.prov> ;
@@ -36,14 +36,14 @@
     rdfs:label "Certification Activity" ;
     dct:abstract "A certification activity" ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/certification/index.md" ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.certification" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/certification/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/certification/index.md" ] ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/certification/index.json" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2024-10-31"^^xsd:date ;
+    dct:modified "2023-05-19"^^xsd:date ;
     skos:inScheme <https://surroundaustralia.github.io/analytic-transparency/> ;
     dcat:keyword "prov" ;
     bblocks:dependsOn <https://surroundaustralia.github.io/ogc.ogc-utils.prov> ;
@@ -61,12 +61,12 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/derivation/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/derivation/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.derivation" ] ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.derivation" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/derivation/index.md" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2024-10-31"^^xsd:date ;
+    dct:modified "2023-05-19"^^xsd:date ;
     skos:inScheme <https://surroundaustralia.github.io/analytic-transparency/> ;
     dcat:keyword "prov" ;
     bblocks:dependsOn <https://surroundaustralia.github.io/ogc.ogc-utils.prov> ;
@@ -92,15 +92,15 @@ These may be further specialised for particular types of analytical processes.
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-10-31T04:23:58.906947"^^xsd:dateTime ;
-    prov:startedAtTime "2024-10-31T04:23:58.842404"^^xsd:dateTime ;
+    prov:endedAtTime "2024-10-31T09:07:19.750174"^^xsd:dateTime ;
+    prov:startedAtTime "2024-10-31T09:07:19.686318"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:c2c12407ee2786e0d5ae20ac5cd3d89b0d9de575" ;
-            rdfs:seeAlso <https://surroundaustralia.github.io/analytic-transparency/build/register.json> ] ;
+            dct:hasVersion "git:050855b29b25fecbd388f99fcd936207661f988f" ;
+            rdfs:seeAlso <https://surroundaustralia.github.io/analytic-transparency/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
