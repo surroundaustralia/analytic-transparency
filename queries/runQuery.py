@@ -62,7 +62,7 @@ def main():
 
         for pair in pairs:
             key, value = pair.split('=')
-            params[key.strip()] = value.strip()
+            params["$"+key.strip()] = value.strip()
     except:
         print(f"No parameters found ({args.params})")
     # Process files in the specified directory with the given pattern

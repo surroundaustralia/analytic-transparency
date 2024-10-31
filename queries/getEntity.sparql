@@ -1,8 +1,14 @@
 prefix prov: <http://www.w3.org/ns/prov#>
-SELECT $entity ?p ?plabel ?o ?olabel
+prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+prefix geo:    <http://www.opengis.net/ont/geosparql#>
+SELECT $entity ?p ?plabel ?o ?olabel ?blankNodeLabel
 WHERE {
     $entity  ?p ?o .
     OPTIONAL { ?p rdfs:label ?plabel }
     OPTIONAL { ?o rdfs:label ?olabel }
-       
+    FILTER ( ?p != geo:hasGeometry )
+       OPTIONAL {
+    FILTER(isBlank(?o))
+    ?o rdfs:label ?blankNodeLabel .
+  }
 }

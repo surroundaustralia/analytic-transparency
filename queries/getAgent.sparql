@@ -1,7 +1,7 @@
 prefix prov: <http://www.w3.org/ns/prov#>
-SELECT DISTINCT $activity ?p ?plabel ?o ?olabel
+SELECT $agent ?p ?plabel ?o ?olabel
 WHERE {
-    $activity  ?p ?o .
+    $agent  ?p ?o .
     OPTIONAL { ?p rdfs:label ?plabel }
     OPTIONAL { ?o rdfs:label ?olabel }
     OPTIONAL {

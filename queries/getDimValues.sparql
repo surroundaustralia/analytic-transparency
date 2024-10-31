@@ -1,0 +1,13 @@
+prefix dim:     <https://surroundaustralia.com/models/datadimensions/>
+prefix sdo:    <https://schema.org/>
+SELECT ?d ?v
+WHERE
+{
+    $object dim:value ?dv .
+    ?dv sdo:value ?v .
+    ?dv dim:dimension/rdfs:label ?d .
+    # ?d rdfs:label ?l
+    # ?dc dim:dimension/dim:order ?order .
+    # ?dc dim:dimension/dim:order ?order .
+}
+

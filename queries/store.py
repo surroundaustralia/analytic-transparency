@@ -45,11 +45,11 @@ def store_query(file_path):
                     a system:StoredQuery, system:SharedQuery , system:ReasoningQuery ;
                system:queryName "{file_base}" ;
                system:queryString "{sparql_query}" ;
-               system:queryCreator "admin" ;
-               system:queryDatabase "prov-chains" .
+               system:queryCreator "{username}" ;
+               system:queryDatabase "{stardog_database}" .
    '''
 
-        # Send the POST request with Basic Authentication
+        # Send the PUT request with Basic Authentication
         response = requests.put(
             stardog_url,
             headers=headers,

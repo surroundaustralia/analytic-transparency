@@ -1,0 +1,14 @@
+prefix dim:     <https://surroundaustralia.com/models/datadimensions/>
+prefix sdo:    <https://schema.org/>
+SELECT DISTINCT ?targetRange ?name?order ?dimRange
+WHERE
+{
+    $object dim:value ?dv .
+    OPTIONAL{ $object dim:targetRange ?targetRange }
+    ?dv dim:dimension ?d .
+    ?d rdfs:label ?name .
+
+    OPTIONAL { ?d dim:order ?order }
+    OPTIONAL { ?d dim:maxValue ?dimRange }
+
+}
