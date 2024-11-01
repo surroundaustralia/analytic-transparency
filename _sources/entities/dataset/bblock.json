@@ -1,6 +1,6 @@
 {
-  "name": "Derivation Activity",
-  "abstract": "A derivation activity takes a data set and derives a new data set from it. It must reference an Entity which defines the derivation function, allowing identification of the derivation process.",
+  "name": "Dataset",
+  "abstract": "A managed set of data described using GeoDCAT or other DCAT profiles. Such data sets have persistent DataDistribution references to allow retrieval.",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",
   "itemClass": "schema",
@@ -12,11 +12,11 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.model.cross-domain.prov",
-    "ogc.ogc-utils.prov"
+    "ogc.geo.geodcat.geodcat"
   ],
   "tags": [
-    "prov"],
+    "prov"
+  ],
   "group": "Activities",
   "highlighted": true
 }

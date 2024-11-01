@@ -1,6 +1,6 @@
 {
-  "name": "Derivation Activity",
-  "abstract": "A derivation activity takes a data set and derives a new data set from it. It must reference an Entity which defines the derivation function, allowing identification of the derivation process.",
+  "name": "Data Dimensions Model",
+  "abstract": "Configurable Data Dimension characteristics. Numeric dimensions support scales",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",
   "itemClass": "schema",
@@ -12,8 +12,7 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.model.cross-domain.prov",
-    "ogc.ogc-utils.prov"
+"ogc.model.cross-domain.datacube"
   ],
   "tags": [
     "prov"],
