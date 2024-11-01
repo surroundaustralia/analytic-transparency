@@ -1,0 +1,30 @@
+
+
+{
+  "itemIdentifier": "sop.at.entities.dataset",
+  "name": "Dataset",
+  "abstract": "A managed set of data described using GeoDCAT or other DCAT profiles. Such data sets have persistent DataDistribution references to allow retrieval.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-05-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ccm",
+  "version": "1.0",
+  "dateOfLastChange": "2024-11-01",
+  "sources": [],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.geo.geodcat.geodcat"
+  ],
+  "tags": [
+    "prov"
+  ],
+  "group": "Activities",
+  "highlighted": true,
+  "shaclRules": {},
+  "sourceFiles": "https://surroundaustralia.github.io/analytic-transparency/_sources/entities/dataset/",
+  "validationPassed": true,
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/surroundaustralia/analytic-transparency",
+  "gitPath": "_sources/entities/dataset"
+}

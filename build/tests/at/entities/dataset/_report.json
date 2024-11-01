@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for sop.at.entities.dataset - Dataset",
+  "bblockName": "Dataset",
+  "bblockId": "sop.at.entities.dataset",
+  "generated": "2024-11-01T00:02:22.582287+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

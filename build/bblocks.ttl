@@ -20,7 +20,7 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/aggregation/index.json" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2023-05-19"^^xsd:date ;
+    dct:modified "2024-11-01"^^xsd:date ;
     skos:inScheme <https://surroundaustralia.github.io/analytic-transparency/> ;
     dcat:keyword "prov" ;
     bblocks:dependsOn <https://surroundaustralia.github.io/ogc.ogc-utils.prov> ;
@@ -38,12 +38,12 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/certification/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.certification" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/certification/index.json" ] ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/certification/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.certification" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2023-05-19"^^xsd:date ;
+    dct:modified "2024-11-01"^^xsd:date ;
     skos:inScheme <https://surroundaustralia.github.io/analytic-transparency/> ;
     dcat:keyword "prov" ;
     bblocks:dependsOn <https://surroundaustralia.github.io/ogc.ogc-utils.prov> ;
@@ -61,18 +61,60 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.activities.derivation" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/derivation/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/derivation/index.json" ] ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/activities/derivation/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/activities/derivation/index.md" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2023-05-19"^^xsd:date ;
+    dct:modified "2024-11-01"^^xsd:date ;
     skos:inScheme <https://surroundaustralia.github.io/analytic-transparency/> ;
     dcat:keyword "prov" ;
-    bblocks:dependsOn <https://surroundaustralia.github.io/ogc.ogc-utils.prov> ;
+    bblocks:dependsOn <https://surroundaustralia.github.io/ogc.model.cross-domain.prov>,
+        <https://surroundaustralia.github.io/ogc.ogc-utils.prov> ;
     bblocks:hasJsonLdContext <https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/derivation/context.jsonld> ;
     bblocks:hasSchema <https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/derivation/schema.json>,
         <https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/derivation/schema.yaml> ;
+    bblocks:hasShaclRule <http://qudt.org/2.1/schema/shacl/qudt> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://surroundaustralia.github.io/sop.at.dimensions> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Data Dimensions Model" ;
+    dct:abstract "Configurable Data Dimension characteristics. Numeric dimensions support scales" ;
+    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.dimensions" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/dimensions/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/dimensions/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2024-11-01"^^xsd:date ;
+    skos:inScheme <https://surroundaustralia.github.io/analytic-transparency/> ;
+    dcat:keyword "prov" ;
+    bblocks:dependsOn <https://surroundaustralia.github.io/ogc.model.cross-domain.datacube> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://surroundaustralia.github.io/sop.at.entities.dataset> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Dataset" ;
+    dct:abstract "A managed set of data described using GeoDCAT or other DCAT profiles. Such data sets have persistent DataDistribution references to allow retrieval." ;
+    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/json-full/at/entities/dataset/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/build/generateddocs/markdown/at/entities/dataset/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://surroundaustralia.github.io/analytic-transparency/bblock/sop.at.entities.dataset" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2024-11-01"^^xsd:date ;
+    skos:inScheme <https://surroundaustralia.github.io/analytic-transparency/> ;
+    dcat:keyword "prov" ;
+    bblocks:dependsOn <https://surroundaustralia.github.io/ogc.geo.geodcat.geodcat> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
@@ -88,15 +130,16 @@ These may be further specialised for particular types of analytical processes.
     skos:prefLabel "Building Blocks - Analytical Transparency" ;
     bblocks:hasValidationReport <https://surroundaustralia.github.io/analytic-transparency/build/tests/report.html> ;
     bblocks:imports <https://ogcincubator.github.io/bblock-prov-schema/build/register.json>,
+        <https://ogcincubator.github.io/cross-domain-model/build/register.json>,
         <https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-10-31T09:08:58.835165"^^xsd:dateTime ;
-    prov:startedAtTime "2024-10-31T09:08:58.770851"^^xsd:dateTime ;
+    prov:endedAtTime "2024-11-01T00:02:22.666891"^^xsd:dateTime ;
+    prov:startedAtTime "2024-11-01T00:02:22.598075"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:75a32e2a974009cf49289d6ea6559330ae9927cd" ;
+            dct:hasVersion "git:7c6621e7f570ad3beb3d901f5122f0f8deb6da57" ;
             rdfs:seeAlso <https://surroundaustralia.github.io/analytic-transparency/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;

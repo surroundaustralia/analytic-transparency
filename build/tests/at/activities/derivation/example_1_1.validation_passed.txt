@@ -1,5 +1,5 @@
 Validation report for sop.at.activities.derivation - Derivation Activity
-Generated 2024-10-31T09:08:58.752680+00:00
+Generated 2024-11-01T00:02:22.576745+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -10,4 +10,93 @@ Output Turtle example_1_1.ttl created
 === JSON Schema ===
 Validation passed
 === End JSON Schema ===
+
+=== SHACL ===
+Validation result for http://qudt.org/2.1/schema/shacl/qudt:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for http://qudt.org/2.1/schema/shacl/qudt:
+ - Shape qudt:BooleanEncodingType: *none*
+ - Shape qudt:OrderedType: *none*
+ - Shape qudt:IntervalScale: *none*
+ - Shape qudt:Enumeration: *none*
+ - Shape qudt:UserQuantityKind: *none*
+ - Shape qudt:PlaneAngleUnit: *none*
+ - Shape qudt:QuantityValue: *none*
+ - Shape qudt:EnumeratedQuantity: *none*
+ - Shape qudt:Citation: *none*
+ - Shape qudt:QuantityType: *none*
+ - Shape qudt:NIST_SP811_Comment: *none*
+ - Shape qudt:ScalarDatatype: *none*
+ - Shape qudt:Symbol: *none*
+ - Shape qudt:RuleType: *none*
+ - Shape qudt:AbstractQuantityKind: *none*
+ - Shape qudt:QuantityKindDimensionVector_SI: *none*
+ - Shape qudt:QuantityKindDimensionVector_CGS-EMU: *none*
+ - Shape qudt:Concept: *none*
+ - Shape qudt:SystemOfUnits: *none*
+ - Shape qudt:RatioScale: *none*
+ - Shape qudt:Prefix: *none*
+ - Shape qudt:floatPercentage: *none*
+ - Shape qudt:TransformType: *none*
+ - Shape qudt:QuantityKindDimensionVector_ISO: *none*
+ - Shape qudt:QuantityKindDimensionVector_Imperial: *none*
+ - Shape qudt:Quantity: *none*
+ - Shape qudt:StructuredDatatype: *none*
+ - Shape qudt:EndianType: *none*
+ - Shape qudt:SignednessType: *none*
+ - Shape qudt:Figure: *none*
+ - Shape qudt:Rule: *none*
+ - Shape qudt:Verifiable: *none*
+ - Shape qudt:StringEncodingType: *none*
+ - Shape qudt:Scale: *none*
+ - Shape qudt:Unit: *none*
+ - Shape qudt:DataEncoding: *none*
+ - Shape qudt:QuantityKindDimensionVector_CGS-ESU: *none*
+ - Shape qudt:UCUMcs: *none*
+ - Shape qudt:BaseDimensionMagnitude: *none*
+ - Shape qudt:CurrencyUnit: *none*
+ - Shape qudt:QuantityKindDimensionVector_CGS-LH: *none*
+ - Shape qudt:CountingUnit: *none*
+ - Shape qudt:AngleUnit: *none*
+ - Shape qudt:CardinalityType: *none*
+ - Shape qudt:DateTimeStringEncodingType: *none*
+ - Shape qudt:ConstantValue: *none*
+ - Shape qudt:EnumerationScale: *none*
+ - Shape qudt:MathsFunctionType: *none*
+ - Shape qudt:BitEncodingType: *none*
+ - Shape qudt:ByteEncodingType: *none*
+ - Shape qudt:integerPercentage: *none*
+ - Shape qudt:SystemOfQuantityKinds: *none*
+ - Shape qudt:SolidAngleUnit: *none*
+ - Shape qudt:QuantityKindDimensionVector: *none*
+ - Shape qudt:Encoding: *none*
+ - Shape qudt:OrdinalScale: *none*
+ - Shape qudt:Statement: *none*
+ - Shape qudt:ScaleType: *none*
+ - Shape qudt:DecimalPrefix: *none*
+ - Shape qudt:DimensionlessUnit: *none*
+ - Shape qudt:EnumeratedValue: *none*
+ - Shape qudt:Datatype: *none*
+ - Shape qudt:Discipline: *none*
+ - Shape qudt:FloatingPointEncodingType: *none*
+ - Shape qudt:BinaryPrefix: *none*
+ - Shape qudt:Comment: *none*
+ - Shape qudt:QuantityKindDimensionVector_CGS-GAUSS: *none*
+ - Shape qudt:Aspect: *none*
+ - Shape qudt:IntegerEncodingType: *none*
+ - Shape qudt:QuantityKindDimensionVector_CGS: *none*
+ - Shape qudt:AspectClass: *none*
+ - Shape qudt:CharEncodingType: *none*
+ - Shape qudt:LatexString: *none*
+ - Shape qudt:Quantifiable: *none*
+ - Shape qudt:PhysicalConstant: *none*
+ - Shape qudt:QuantityKind: *none*
+ - Shape qudt:Organization: *none*
+ - Shape qudt:LogarithmicUnit: *none*
+ - Shape qudt:DerivedUnit: *none*
+ - Shape qudt:NominalScale: *none*
+
+=== End SHACL ===
 

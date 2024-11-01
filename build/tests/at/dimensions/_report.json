@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for sop.at.dimensions - Data Dimensions Model",
+  "bblockName": "Data Dimensions Model",
+  "bblockId": "sop.at.dimensions",
+  "generated": "2024-11-01T00:02:21.110195+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

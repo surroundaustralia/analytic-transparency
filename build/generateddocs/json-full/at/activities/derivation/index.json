@@ -9,11 +9,12 @@
   "itemClass": "schema",
   "register": "ccm",
   "version": "1.0",
-  "dateOfLastChange": "2023-05-19",
+  "dateOfLastChange": "2024-11-01",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
+    "ogc.model.cross-domain.prov",
     "ogc.ogc-utils.prov"
   ],
   "tags": [
@@ -21,7 +22,11 @@
   ],
   "group": "Activities",
   "highlighted": true,
-  "shaclRules": {},
+  "shaclRules": {
+    "ogc.model.cross-domain.prov": [
+      "http://qudt.org/2.1/schema/shacl/qudt"
+    ]
+  },
   "schema": {
     "application/yaml": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/derivation/schema.yaml",
     "application/json": "https://surroundaustralia.github.io/analytic-transparency/build/annotated/at/activities/derivation/schema.json"

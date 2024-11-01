@@ -2,7 +2,7 @@
   "title": "Validation report for sop.at.activities.derivation - Derivation Activity",
   "bblockName": "Derivation Activity",
   "bblockId": "sop.at.activities.derivation",
-  "generated": "2024-10-31T09:08:58.752751+00:00",
+  "generated": "2024-11-01T00:02:22.576823+00:00",
   "result": true,
   "items": [
     {
@@ -55,6 +55,266 @@
               "result": true,
               "isError": false,
               "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "http://qudt.org/2.1/schema/shacl/qudt",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for http://qudt.org/2.1/schema/shacl/qudt:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "http://qudt.org/2.1/schema/shacl/qudt",
+              "focusNodes": {
+                "qudt:BooleanEncodingType": {
+                  "nodes": []
+                },
+                "qudt:OrderedType": {
+                  "nodes": []
+                },
+                "qudt:IntervalScale": {
+                  "nodes": []
+                },
+                "qudt:Enumeration": {
+                  "nodes": []
+                },
+                "qudt:UserQuantityKind": {
+                  "nodes": []
+                },
+                "qudt:PlaneAngleUnit": {
+                  "nodes": []
+                },
+                "qudt:QuantityValue": {
+                  "nodes": []
+                },
+                "qudt:EnumeratedQuantity": {
+                  "nodes": []
+                },
+                "qudt:Citation": {
+                  "nodes": []
+                },
+                "qudt:QuantityType": {
+                  "nodes": []
+                },
+                "qudt:NIST_SP811_Comment": {
+                  "nodes": []
+                },
+                "qudt:ScalarDatatype": {
+                  "nodes": []
+                },
+                "qudt:Symbol": {
+                  "nodes": []
+                },
+                "qudt:RuleType": {
+                  "nodes": []
+                },
+                "qudt:AbstractQuantityKind": {
+                  "nodes": []
+                },
+                "qudt:QuantityKindDimensionVector_SI": {
+                  "nodes": []
+                },
+                "qudt:QuantityKindDimensionVector_CGS-EMU": {
+                  "nodes": []
+                },
+                "qudt:Concept": {
+                  "nodes": []
+                },
+                "qudt:SystemOfUnits": {
+                  "nodes": []
+                },
+                "qudt:RatioScale": {
+                  "nodes": []
+                },
+                "qudt:Prefix": {
+                  "nodes": []
+                },
+                "qudt:floatPercentage": {
+                  "nodes": []
+                },
+                "qudt:TransformType": {
+                  "nodes": []
+                },
+                "qudt:QuantityKindDimensionVector_ISO": {
+                  "nodes": []
+                },
+                "qudt:QuantityKindDimensionVector_Imperial": {
+                  "nodes": []
+                },
+                "qudt:Quantity": {
+                  "nodes": []
+                },
+                "qudt:StructuredDatatype": {
+                  "nodes": []
+                },
+                "qudt:EndianType": {
+                  "nodes": []
+                },
+                "qudt:SignednessType": {
+                  "nodes": []
+                },
+                "qudt:Figure": {
+                  "nodes": []
+                },
+                "qudt:Rule": {
+                  "nodes": []
+                },
+                "qudt:Verifiable": {
+                  "nodes": []
+                },
+                "qudt:StringEncodingType": {
+                  "nodes": []
+                },
+                "qudt:Scale": {
+                  "nodes": []
+                },
+                "qudt:Unit": {
+                  "nodes": []
+                },
+                "qudt:DataEncoding": {
+                  "nodes": []
+                },
+                "qudt:QuantityKindDimensionVector_CGS-ESU": {
+                  "nodes": []
+                },
+                "qudt:UCUMcs": {
+                  "nodes": []
+                },
+                "qudt:BaseDimensionMagnitude": {
+                  "nodes": []
+                },
+                "qudt:CurrencyUnit": {
+                  "nodes": []
+                },
+                "qudt:QuantityKindDimensionVector_CGS-LH": {
+                  "nodes": []
+                },
+                "qudt:CountingUnit": {
+                  "nodes": []
+                },
+                "qudt:AngleUnit": {
+                  "nodes": []
+                },
+                "qudt:CardinalityType": {
+                  "nodes": []
+                },
+                "qudt:DateTimeStringEncodingType": {
+                  "nodes": []
+                },
+                "qudt:ConstantValue": {
+                  "nodes": []
+                },
+                "qudt:EnumerationScale": {
+                  "nodes": []
+                },
+                "qudt:MathsFunctionType": {
+                  "nodes": []
+                },
+                "qudt:BitEncodingType": {
+                  "nodes": []
+                },
+                "qudt:ByteEncodingType": {
+                  "nodes": []
+                },
+                "qudt:integerPercentage": {
+                  "nodes": []
+                },
+                "qudt:SystemOfQuantityKinds": {
+                  "nodes": []
+                },
+                "qudt:SolidAngleUnit": {
+                  "nodes": []
+                },
+                "qudt:QuantityKindDimensionVector": {
+                  "nodes": []
+                },
+                "qudt:Encoding": {
+                  "nodes": []
+                },
+                "qudt:OrdinalScale": {
+                  "nodes": []
+                },
+                "qudt:Statement": {
+                  "nodes": []
+                },
+                "qudt:ScaleType": {
+                  "nodes": []
+                },
+                "qudt:DecimalPrefix": {
+                  "nodes": []
+                },
+                "qudt:DimensionlessUnit": {
+                  "nodes": []
+                },
+                "qudt:EnumeratedValue": {
+                  "nodes": []
+                },
+                "qudt:Datatype": {
+                  "nodes": []
+                },
+                "qudt:Discipline": {
+                  "nodes": []
+                },
+                "qudt:FloatingPointEncodingType": {
+                  "nodes": []
+                },
+                "qudt:BinaryPrefix": {
+                  "nodes": []
+                },
+                "qudt:Comment": {
+                  "nodes": []
+                },
+                "qudt:QuantityKindDimensionVector_CGS-GAUSS": {
+                  "nodes": []
+                },
+                "qudt:Aspect": {
+                  "nodes": []
+                },
+                "qudt:IntegerEncodingType": {
+                  "nodes": []
+                },
+                "qudt:QuantityKindDimensionVector_CGS": {
+                  "nodes": []
+                },
+                "qudt:AspectClass": {
+                  "nodes": []
+                },
+                "qudt:CharEncodingType": {
+                  "nodes": []
+                },
+                "qudt:LatexString": {
+                  "nodes": []
+                },
+                "qudt:Quantifiable": {
+                  "nodes": []
+                },
+                "qudt:PhysicalConstant": {
+                  "nodes": []
+                },
+                "qudt:QuantityKind": {
+                  "nodes": []
+                },
+                "qudt:Organization": {
+                  "nodes": []
+                },
+                "qudt:LogarithmicUnit": {
+                  "nodes": []
+                },
+                "qudt:DerivedUnit": {
+                  "nodes": []
+                },
+                "qudt:NominalScale": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for http://qudt.org/2.1/schema/shacl/qudt:\n - Shape qudt:BooleanEncodingType: *none*\n - Shape qudt:OrderedType: *none*\n - Shape qudt:IntervalScale: *none*\n - Shape qudt:Enumeration: *none*\n - Shape qudt:UserQuantityKind: *none*\n - Shape qudt:PlaneAngleUnit: *none*\n - Shape qudt:QuantityValue: *none*\n - Shape qudt:EnumeratedQuantity: *none*\n - Shape qudt:Citation: *none*\n - Shape qudt:QuantityType: *none*\n - Shape qudt:NIST_SP811_Comment: *none*\n - Shape qudt:ScalarDatatype: *none*\n - Shape qudt:Symbol: *none*\n - Shape qudt:RuleType: *none*\n - Shape qudt:AbstractQuantityKind: *none*\n - Shape qudt:QuantityKindDimensionVector_SI: *none*\n - Shape qudt:QuantityKindDimensionVector_CGS-EMU: *none*\n - Shape qudt:Concept: *none*\n - Shape qudt:SystemOfUnits: *none*\n - Shape qudt:RatioScale: *none*\n - Shape qudt:Prefix: *none*\n - Shape qudt:floatPercentage: *none*\n - Shape qudt:TransformType: *none*\n - Shape qudt:QuantityKindDimensionVector_ISO: *none*\n - Shape qudt:QuantityKindDimensionVector_Imperial: *none*\n - Shape qudt:Quantity: *none*\n - Shape qudt:StructuredDatatype: *none*\n - Shape qudt:EndianType: *none*\n - Shape qudt:SignednessType: *none*\n - Shape qudt:Figure: *none*\n - Shape qudt:Rule: *none*\n - Shape qudt:Verifiable: *none*\n - Shape qudt:StringEncodingType: *none*\n - Shape qudt:Scale: *none*\n - Shape qudt:Unit: *none*\n - Shape qudt:DataEncoding: *none*\n - Shape qudt:QuantityKindDimensionVector_CGS-ESU: *none*\n - Shape qudt:UCUMcs: *none*\n - Shape qudt:BaseDimensionMagnitude: *none*\n - Shape qudt:CurrencyUnit: *none*\n - Shape qudt:QuantityKindDimensionVector_CGS-LH: *none*\n - Shape qudt:CountingUnit: *none*\n - Shape qudt:AngleUnit: *none*\n - Shape qudt:CardinalityType: *none*\n - Shape qudt:DateTimeStringEncodingType: *none*\n - Shape qudt:ConstantValue: *none*\n - Shape qudt:EnumerationScale: *none*\n - Shape qudt:MathsFunctionType: *none*\n - Shape qudt:BitEncodingType: *none*\n - Shape qudt:ByteEncodingType: *none*\n - Shape qudt:integerPercentage: *none*\n - Shape qudt:SystemOfQuantityKinds: *none*\n - Shape qudt:SolidAngleUnit: *none*\n - Shape qudt:QuantityKindDimensionVector: *none*\n - Shape qudt:Encoding: *none*\n - Shape qudt:OrdinalScale: *none*\n - Shape qudt:Statement: *none*\n - Shape qudt:ScaleType: *none*\n - Shape qudt:DecimalPrefix: *none*\n - Shape qudt:DimensionlessUnit: *none*\n - Shape qudt:EnumeratedValue: *none*\n - Shape qudt:Datatype: *none*\n - Shape qudt:Discipline: *none*\n - Shape qudt:FloatingPointEncodingType: *none*\n - Shape qudt:BinaryPrefix: *none*\n - Shape qudt:Comment: *none*\n - Shape qudt:QuantityKindDimensionVector_CGS-GAUSS: *none*\n - Shape qudt:Aspect: *none*\n - Shape qudt:IntegerEncodingType: *none*\n - Shape qudt:QuantityKindDimensionVector_CGS: *none*\n - Shape qudt:AspectClass: *none*\n - Shape qudt:CharEncodingType: *none*\n - Shape qudt:LatexString: *none*\n - Shape qudt:Quantifiable: *none*\n - Shape qudt:PhysicalConstant: *none*\n - Shape qudt:QuantityKind: *none*\n - Shape qudt:Organization: *none*\n - Shape qudt:LogarithmicUnit: *none*\n - Shape qudt:DerivedUnit: *none*\n - Shape qudt:NominalScale: *none*\n"
             }
           ]
         }
